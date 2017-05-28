@@ -6,7 +6,7 @@ html
 
     link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.min.css')
     base(href='/')
-  body(ng-app="brhue")
+  body(ng-app="brhue", style="padding-top: 70px;")
     ng-view
 
     // Angular and Angular UI library
@@ -14,8 +14,16 @@ html
     script(src='/bower_components/angular-route/angular-route.min.js')
     script(src='/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js')
     script(src='/bower_components/angular-bootstrap/ui-bootstrap.min.js')
+    
+    // Lo-dash library
+    script(src='/bower_components/ng-lodash/build/ng-lodash.min.js')
+    
+    // Charts library
+    script(src='/bower_components/chart.js/dist/Chart.js')
+    script(src='/bower_components/angular-chart.js/dist/angular-chart.min.js')
 
     // My libraries
     script(src='/javascripts/app.js')
     script(src='/javascripts/controllers/IndexController.js')
+    script(src='/javascripts/controllers/XrayController.js')
     script(src='/javascripts/appRoutes.js')

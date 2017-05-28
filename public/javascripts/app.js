@@ -1,1 +1,1 @@
-angular.module('brhue', ['ui.bootstrap', 'ngRoute']);
+angular.module('brhue', ['ui.bootstrap', 'ngRoute', 'ngLodash', 'chart.js']);

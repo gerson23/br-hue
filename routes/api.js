@@ -1,8 +1,9 @@
 var express = require('express');
 var request = require('request');
 var xml2js= require('xml2js');
-var router = express.Router();
+var _ = require('underscore');
 
+var router = express.Router();
 var parser = new xml2js.Parser({explicitArray: false});
 
 router.get('/congressman', function(req, res, next) {
@@ -12,6 +13,7 @@ router.get('/congressman', function(req, res, next) {
         gzip: true
     }, function(error, response, body) {
         parser.parseString(body, function(err, result) {
+            result = _.where(result.deputados.deputado, {condicao: 'Titular'});
             res.send(result);
         });
     });
