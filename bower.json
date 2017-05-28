@@ -1,0 +1,23 @@
+{
+  "name": "br-hue",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Gerson Carlos <gerson.mtg@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/gerson23/br-hue",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular-bootstrap": "^2.5.0",
+    "angular-route": "^1.6.4"
+  }
+}

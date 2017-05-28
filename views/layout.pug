@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title Politicos
+    //link(rel='stylesheet', href='/stylesheets/style.css')
+
+    link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.min.css')
+    base(href='/')
+  body(ng-app="brhue")
+    ng-view
+
+    // Angular and Angular UI library
+    script(src='/bower_components/angular/angular.min.js')
+    script(src='/bower_components/angular-route/angular-route.min.js')
+    script(src='/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js')
+    script(src='/bower_components/angular-bootstrap/ui-bootstrap.min.js')
+
+    // My libraries
+    script(src='/javascripts/app.js')
+    script(src='/javascripts/controllers/IndexController.js')
+    script(src='/javascripts/appRoutes.js')

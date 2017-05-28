@@ -1,0 +1,11 @@
+h2 Analise seu congresso
+
+button(class="btn btn-primary", ng-click="loadCongress()") Clique aqui para carregar
+
+div(class="container")
+    div(class="row")
+        div(class="col-sm-6 col-md-4", ng-repeat="cm in congressman")
+            div(class="thumbnail")
+                img(ng-src="{{cm.urlFoto}}")
+                div(clas="caption")
+                    h4 {{cm.nomeParlamentar}} ({{cm.partido}}/{{cm.uf}})
